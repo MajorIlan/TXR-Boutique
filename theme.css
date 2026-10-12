@@ -1,0 +1,49 @@
+/* ==========================================================================
+   THÈME TXR — couleurs et polices
+   --------------------------------------------------------------------------
+   Toutes les couleurs du site viennent d'ici. Pour changer l'identité :
+   modifiez uniquement les valeurs ci-dessous.
+   ========================================================================== */
+
+:root {
+  /* --- Couleurs de marque -------------------------------------------- */
+  --primary: #1f6bff;          /* Bleu TXR (boutons, liens, accents)      */
+  --primary-dark: #0b47c9;     /* Bleu foncé (survol, dégradés)           */
+  --primary-light: #6aa2ff;    /* Bleu clair (lueurs, détails)            */
+  --secondary: #ffffff;        /* Blanc                                    */
+
+  /* --- Fonds --------------------------------------------------------- */
+  --background: #050b1c;       /* Bleu nuit (fond général)                */
+  --surface: #0b1631;          /* Cartes, panneaux                         */
+  --surface-2: #11204a;        /* Cartes au survol, zones secondaires      */
+
+  /* --- Texte --------------------------------------------------------- */
+  --text: #f3f6ff;             /* Texte principal                          */
+  --text-muted: #9aa9cc;       /* Texte secondaire                         */
+  --text-on-primary: #ffffff;  /* Texte posé sur le bleu                   */
+
+  /* --- États --------------------------------------------------------- */
+  --success: #3ddc97;          /* « Disponible »                           */
+  --danger: #ff5c7a;           /* « Épuisé »                               */
+  --todo: #ffd84d;             /* Surlignage des [À COMPLÉTER]             */
+
+  /* --- Lignes et effets (dérivés des couleurs ci-dessus) -------------- */
+  --border: rgb(255 255 255 / 0.09);
+  --border-strong: rgb(255 255 255 / 0.18);
+  --glow: 0 0 0 1px rgb(31 107 255 / 0.55), 0 18px 50px -12px rgb(31 107 255 / 0.55);
+
+  /* --- Polices ------------------------------------------------------- */
+  /* « agency-fb » est fournie par le kit Adobe Fonts (voir site.config.js).
+     Si elle ne charge pas, Barlow Condensed (hébergée sur le site) prend le relais. */
+  --font-display: "agency-fb", "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Polices de remplacement hébergées localement (licence OFL, aucun appel externe) */
+@font-face { font-family: "Barlow Condensed"; font-weight: 400; font-style: normal; font-display: swap; src: url("../fonts/barlow-condensed-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 600; font-style: normal; font-display: swap; src: url("../fonts/barlow-condensed-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-style: normal; font-display: swap; src: url("../fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800 900; font-style: normal; font-display: swap; src: url("../fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 400; font-style: normal; font-display: swap; src: url("../fonts/barlow-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 500; font-style: normal; font-display: swap; src: url("../fonts/barlow-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 600 700; font-style: normal; font-display: swap; src: url("../fonts/barlow-latin-600-normal.woff2") format("woff2"); }
